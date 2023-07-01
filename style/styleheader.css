@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+    padding: 10px 20px;
+    z-index: 10000;
+}
+.logoimg{
+    display: inline;
+}
+
+header .logo{
+    position: relative;
+    display: inline;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 1px;
+    transition: 1s;
+}
+
+.logoimg img{
+    height: 45px;
+    width: 45px;
+}
+.sticky{
+    padding: 12px 40px;
+    background: white;
+}
+header ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar ul li{
+    position: relative;
+}
+.nav-bar ul li a{
+    position: relative;
+    margin: 5px 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-bar ul li a:hover{
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sticky .nav-bar ul li a{
+    color: black;
+}
+.sticky .nav-bar ul li a:hover{
+    padding: 10px 15px;
+    font-size: 18px ;
+    font-weight: 700;
+    color: white;
+    border-radius: 30px;
+    background-color: rgba(70, 0, 70, 0.4);
+}
+.sticky .logo{
+    color: black;
+}
+
+@media only screen and (min-width:1200px){
+    header{
+        padding: 15px 15px;
+    }
+}
+@media only screen and (min-width:1000px){
+    header{
+        padding: 10px 10px;
+    }
+}
+@media only screen and (max-width:800px){
+    .hamwrap {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        height: 35px;
+        width: 35px;
+        margin: 0;
+        transition: 1s;
+        margin-right: 10px;
+    }
+
+    .hamwrap:hover{
+        height: 40px;
+        width: 40px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px #0ef,0 0 10px #0ef,0 0 17px #0ef,0 0 26px #0ef;
+    }
+
+    .hamburger{
+        position: relative;
+        width: 25px;
+        height: 25px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        transition: 1s;
+        transform: rotate(0);
+    }
+    .clicked .hamburger{
+        transform: rotate(315deg);
+    }
+    .hamburger .line{
+        position: absolute;
+        width: 100%;
+        height: 4.5px;
+        border-radius: 4px;
+        box-shadow: 0 0 3px #0ef,0 0 5px #0ef;
+        background: linear-gradient(45deg, #0cef,black);;
+        transition: 0.4s;
+    }
+
+    .hamburger div:nth-child(1){
+        top: 0px;
+        left: 0px;
+        width: 70%;
+        transform: translateY(0);
+    }
+
+    .clicked .hamburger div:nth-child(1){
+        width: 100%;
+        transform: translateY(10px);
+    }
+
+    .hamburger div:nth-child(2){
+        width: 100%;
+    }
+    .clicked .hamburger div:nth-child(2){
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    .hamburger div:nth-child(3){
+        bottom: 0px;
+        right: 0px;
+        width: 70%;
+        transform: rotate(0);
+    }
+    .clicked .hamburger div:nth-child(3){
+        width: 100%;
+        transform: rotate(90deg);
+        bottom: 11px;
+    }
+    .hactive{
+        background-color: black;
+        padding: 0;
+        transition: height 1s;
+    }
+    .nav-bar{
+        position: absolute;
+        top:45.5px;
+        left: 0;
+        width: 100vw;
+        transition: 1s;
+        overflow: hidden;
+    }
+    .nav-bar ul{
+        height: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        transition: 1s;
+        background-image: linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0.95));
+        opacity: 0;
+    }
+    .nav-bar ul li a{
+        opacity: 0 ;
+        padding: 20px;
+    }
+    .hactive .nav-bar ul{
+        opacity:1;
+        height: 70vh;
+    }
+    .active ul li a{
+        opacity: 1;
+        color: white;
+    }
+    .active ul li{
+        margin: 30px;
+    }
+    .hactive .logo{
+        color: white;
+    }
+}
