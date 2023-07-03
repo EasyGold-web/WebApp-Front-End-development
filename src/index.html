@@ -50,6 +50,22 @@
             </div>
         </div>
     </section>
+
+    <div class="main-content">
+        <script>
+            // JavaScript code for the hamburger icon functionality
+            const hamburger = document.querySelector(".hamburger");
+            const navBar = document.querySelector(".sidebar");
+            <!-- nav-bar ul -->
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navBar.classList.toggle('show');
+            });
+        </script>
+        <div>
+        <h1 class="welcome-heading">Hello Vignesh</h1>
+        <h2 class="dashboard">Dashboard</h2>
+    </div>
     <script src="../script.js"></script>
 </body>
 </html>

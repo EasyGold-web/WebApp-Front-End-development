@@ -1,0 +1,145 @@
+.rf-container {
+    border: 2px dashed white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    max-width: 65%;
+    margin: 0 auto;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.rf-row {
+    margin-bottom: 10px;
+}
+
+.rf-col {
+    text-align: start;
+    margin: 0.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+    margin: 1em;
+}
+
+.align-items-center {
+    align-items: center;
+    margin-top: 1em;
+}
+
+.custom-heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-subheading {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-text {
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-input {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 70%;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+}
+
+.custom-button {
+    padding: 10px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.custom-button:hover {
+    background: #ffffff;
+}
+
+.mail-div{
+    display: flex;
+    justify-content: center;
+}
+
+.custom-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 600px) {
+    .rf-container {
+        padding: 0.5em;
+        margin: 1rem;
+        max-width: 100%;
+    }
+
+    .custom-heading {
+        font-size: 24px;
+    }
+
+    .custom-subheading {
+        font-size: 18px;
+    }
+
+    .custom-text {
+        font-size: 14px;
+    }
+
+    .custom-input {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .center-content {
+      margin-left: 12%;
+      margin-right: 5%;
+      margin-top: 4%;
+    }
+    .rf-container{
+        margin-top: 4%;
+    }
+
+.image-centre{
+    padding: 4em;
+}
+
+  }
+  
+  @media (max-width: 767px) {
+       .center-content {
+      margin: 10% 5%;
+    }
+  }
+  
