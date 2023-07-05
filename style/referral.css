@@ -101,6 +101,9 @@
     padding-left: 1em;
   }
   
+.wave{
+    width: 20%;
+}
 @media (max-width: 600px) {
     .rf-container {
         padding: 0.5em;
@@ -109,15 +112,15 @@
     }
 
     .custom-heading {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .custom-subheading {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .custom-text {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .custom-input {
@@ -147,6 +150,13 @@
   @media (max-width: 767px) {
        .center-content {
       margin: 10% 5%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .wave {
+      /* display: block; */
+      display: none;
     }
   }
   
