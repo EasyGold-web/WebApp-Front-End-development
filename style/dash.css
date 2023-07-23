@@ -440,8 +440,16 @@ canvas {
 
 .carousel-photo {
     
-    object-fit: cover;
+    /* object-fit: cover; */
     border-radius: 10%;
+    max-width: 15%;
+  height: auto;
+}
+
+.trophy-photo{
+  border-radius: 10%;
+  max-width: 50%;
+height: auto;
 }
 
 /* Responsive styles */
