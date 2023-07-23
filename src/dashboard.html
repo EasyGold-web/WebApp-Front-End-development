@@ -1,349 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/dash.css">
-    <link rel="stylesheet" href="../style/styleheader.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/dash.css" />
+    <link rel="stylesheet" href="../style/styleheader.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
-    <style>
-       
-        
-        
-    </style>
-</head>
-<body style="background-color: rgba(0,0,0,0.75);  " class="fade-in">
+    <style></style>
+  </head>
+  <body style="background-color: rgba(0, 0, 0, 0.75)" class="fade-in">
     <section id="hero">
-        <div>
-            <div id="bg51B4FA"></div>
-            <div id="bgF8A6F0"></div>
-            <div id="bgF8D997"></div>
-            <div class="mainblackbg" style="background-color: black; ">
-                <div class="fullscreenblur"></div>
-            </div>
+      <div>
+        <div id="bg51B4FA"></div>
+        <div id="bgF8A6F0"></div>
+        <div id="bgF8D997"></div>
+        <div class="mainblackbg" style="background-color: black">
+          <div class="fullscreenblur"></div>
         </div>
+      </div>
     </section>
     <!-- <div class="divider-vertical"></div>
     <div class="divider-horizontal"></div> -->
     <header>
-        <div>
-            <div class="logoimg">
-                <img src="../assets/Logo.png" alt="">
-            </div>
-            <div class="logo">EasyGold</div>    
+      <div>
+        <div class="logoimg">
+          <img src="../assets/Logo.png" alt="" />
         </div>
-        <div class="hamwrap">
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+        <div class="logo">EasyGold</div>
+      </div>
+      <div class="hamwrap">
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
-        <nav class="nav-bar">
-            <ul>
-                <li>
-                    <div class="search-container">
-                        <input type="text" placeholder="Search" class="search-bar">
-                        <!-- <button type="submit" class="search-button"><i class="fa fa-search"></i></button> -->
-                    </div>
-                </li>
-                <li>
-                    <a href=""> </a>
-                </li>
-                <li class="user-profile">
-                    <img src="../assets/Logo.png" alt="Profile Photo" class="profile-photo">
-                    <a href="">Hello, Vignesh</a>
-                </li>
-                
-                <li>
-                    <a href="">Shop</a>
-                </li>
-                <li>
-                    <a href="">Contact Us</a>
-                </li>
-                <li>
-                    <a href="">Sign In</a>
-                </li>
-               
-            </ul>
-        </nav>
-        
-        
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <div class="search-container">
+              <input type="text" placeholder="Search" class="search-bar" />
+              <!-- <button type="submit" class="search-button"><i class="fa fa-search"></i></button> -->
+            </div>
+          </li>
+          <li>
+            <a href=""> </a>
+          </li>
+          <li class="user-profile">
+            <img
+              src="../assets/Logo.png"
+              alt="Profile Photo"
+              class="profile-photo"
+            />
+            <a href="">Hello, Vignesh</a>
+          </li>
+
+          <li>
+            <a href="">Shop</a>
+          </li>
+          <li>
+            <a href="">Contact Us</a>
+          </li>
+          <li>
+            <a href="">Sign In</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <div class="sidebar ">
-        <i class="sidebar-icon active fas fa-home"></i>
-        <span class="sidebar-text sidebar-active">Dashboard</span>
-        <i class="sidebar-icon fas fa-chart-line"></i>
-        <span class="sidebar-text">Explore</span>
-        <i class="sidebar-icon fas fa-wallet"></i>
-        <span class="sidebar-text">Wallet</span>
-        <i class="sidebar-icon fas fa-exchange-alt"></i>
-        <span class="sidebar-text">Transaction</span>
+    <div class="sidebar">
+      <i class="sidebar-icon active fas fa-home"></i>
+      <span class="sidebar-text sidebar-active">Dashboard</span>
+      <i class="sidebar-icon fas fa-chart-line"></i>
+      <span class="sidebar-text">Explore</span>
+      <i class="sidebar-icon fas fa-wallet"></i>
+      <span class="sidebar-text">Wallet</span>
+      <i class="sidebar-icon fas fa-exchange-alt"></i>
+      <span class="sidebar-text">Transaction</span>
     </div>
-      
+
     <div class="main-content">
-        <script>
-            // JavaScript code for the hamburger icon functionality
-            const hamburger = document.querySelector(".hamburger");
-            const navBar = document.querySelector(".sidebar");
-            <!-- nav-bar ul -->
-            hamburger.addEventListener('click', function() {
-                hamburger.classList.toggle('active');
-                navBar.classList.toggle('show');
-            });
-        </script>
-        <div>
-        <h1 class="heading">Welcome back, Vignesh!</h1>
-        <h2 class="dashboard">Overview</h2>
-    </div>
-    <div class="container slide-in-left">
-       
+      <script>
+        // JavaScript code for the hamburger icon functionality
+        const hamburger = document.querySelector(".hamburger");
+        const navBar = document.querySelector(".sidebar");
+        <!-- nav-bar ul -->
+        hamburger.addEventListener("click", function () {
+          hamburger.classList.toggle("active");
+          navBar.classList.toggle("show");
+        });
+      </script>
+      <!-- <div>
+            <h1 class="heading">Welcome back, Vignesh!</h1>
+            <h2 class="dashboard">Overview</h2>
+        </div> -->
+      <div class="header-dash">
+        <div class="header-left">
+          <h1 class="custom-heading">Welcome back, Vignesh!</h1>
+          <h2 class="custom-heading">Overview</h2>
+        </div>
+        <div class="header-right">
+          <!-- Add your icon here -->
+          <img
+            src="../assets/calender.png"
+            alt="calender"
+            class="calender-photo"
+          />
+        </div>
+      </div>
+
+      <div class="container slide-in-left">
         <div class="box">
-            <div class="progress-bar " data-progress="75">
-                <div class="progress-bar-circle" style="transform: rotate(135deg);"></div>
-            </div>
-            <div>
-                <div class="savings-text">Your Savings in</div>
-                <div class="savings-text">24K Gold</div>
-            </div>
-            <div class="dots-container">
-                <div class="dots"></div>
-                <div class="dots"></div>
-                <div class="dots"></div>
-            </div>
+          <div class="progress-bar" data-progress="75">
+            <div
+              class="progress-bar-circle"
+              style="transform: rotate(135deg)"
+            ></div>
+          </div>
+          <div>
+            <div class="savings-text">Your Savings in</div>
+            <div class="savings-text">24K Gold</div>
+          </div>
+          <div class="dots-container">
+            <div class="dots"></div>
+            <div class="dots"></div>
+            <div class="dots"></div>
+          </div>
         </div>
         <div class="box">
-            <div class="progress-bar " data-progress="50">
-                <div class="progress-bar-circle" style="transform: rotate(90deg);"></div>
-            </div>
-            <div>
-                <div class="savings-text">Your Savings in</div>
-                <div class="savings-text">24K Gold</div>
-            </div>
-            <div class="dots-container">
-                <div class="dots"></div>
-                <div class="dots"></div>
-                <div class="dots"></div>
-            </div>
+          <div class="progress-bar" data-progress="50">
+            <div
+              class="progress-bar-circle"
+              style="transform: rotate(90deg)"
+            ></div>
+          </div>
+          <div>
+            <div class="savings-text">Your Savings in</div>
+            <div class="savings-text">24K Gold</div>
+          </div>
+          <div class="dots-container">
+            <div class="dots"></div>
+            <div class="dots"></div>
+            <div class="dots"></div>
+          </div>
         </div>
         <div class="box">
-            <div class="progress-bar " data-progress="25">
-                <div class="progress-bar-circle" style="transform: rotate(45deg);"></div>
-            </div>
-            <div>
-                <div class="savings-text">Your Savings in</div>
-                <div class="savings-text">24K Gold</div>
-            </div>
-            <div class="dots-container">
-                <div class="dots"></div>
-                <div class="dots"></div>
-                <div class="dots"></div>
-            </div>
+          <div class="progress-bar" data-progress="25">
+            <div
+              class="progress-bar-circle"
+              style="transform: rotate(45deg)"
+            ></div>
+          </div>
+          <div>
+            <div class="savings-text">Your Savings in</div>
+            <div class="savings-text">24K Gold</div>
+          </div>
+          <div class="dots-container">
+            <div class="dots"></div>
+            <div class="dots"></div>
+            <div class="dots"></div>
+          </div>
         </div>
 
         <div class="photo-box">
-            <img src="../assets/photo1.png" alt="Logo" class="carousel-photo">
-            <img src="../assets/photo2.png" alt="Logo" class="carousel-photo">
-            <img src="../assets/photo3.png" alt="Logo" class="carousel-photo">
-            <img src="../assets/photo4.png" alt="Logo" class="carousel-photo">
-            <img src="../assets/photo5.png" alt="Logo" class="carousel-photo">
+          <img src="../assets/photo1.png" alt="Logo" class="carousel-photo" />
+          <img src="../assets/photo2.png" alt="Logo" class="carousel-photo" />
+          <img src="../assets/photo3.png" alt="Logo" class="carousel-photo" />
+          <img src="../assets/photo4.png" alt="Logo" class="carousel-photo" />
+          <img src="../assets/photo5.png" alt="Logo" class="carousel-photo" />
         </div>
 
         <!-- // table -->
         <div class="table-box">
-            <div class="table-heading">
-                Your Recent Transactions
-                <div class="dots-container">
-                    <div class="dots"></div>
-                    <div class="dots"></div>
-                    <div class="dots"></div>
-                </div>
+          <div class="table-heading">
+            Your Recent Transactions
+            <div class="golden-circle">
+              <div class="circle-border2">
+                <img
+                  src="../assets/arrow-r.png"
+                  alt="Arrow"
+                  class="trophy-photo"
+                />
+              </div>
             </div>
-            <div class="table-content">
-                <div class="table-column">
-                    <div class="column-heading">Name</div>
-                    <div class="text">Text 1</div>
-                    <div class="text">Text 2</div>
-                    <div class="text">Text 3</div>
-                    <div class="text">Text 4</div>
-                    <div class="text">Text 5</div>
-                </div>
-                <div class="table-column">
-                    <div class="column-heading black">.</div>
-                    <div class="text">Text 1</div>
-                    <div class="text">Text 2</div>
-                    <div class="text">Text 3</div>
-                    <div class="text">Text 4</div>
-                    <div class="text">Text 5</div>
-                </div>
-                <div class="table-column">
-                    <div class="column-heading">Amazon Card</div>
-                    <div class="text">Text 1</div>
-                    <div class="text">Text 2</div>
-                    <div class="text">Text 3</div>
-                    <div class="text">Text 4</div>
-                    <div class="text">Text 5</div>
-                </div>
-                <div class="table-column">
-                    <div class="column-heading black">.</div>
-                    <div class="text">Text 1</div>
-                    <div class="text">Text 2</div>
-                    <div class="text">Text 3</div>
-                    <div class="text">Text 4</div>
-                    <div class="text">Text 5</div>
-                </div>
-                <div class="table-column">
-                    <div class="column-heading">#####</div>
-                    <div class="text">Text 1</div>
-                    <div class="text">Text 2</div>
-                    <div class="text">Text 3</div>
-                    <div class="text">Text 4</div>
-                    <div class="text">Text 5</div>
-                </div>
-                <div class="table-column">
-                    <div class="column-heading black">.</div>
-                    <div class="text">Text 1</div>
-                    <div class="text">Text 2</div>
-                    <div class="text">Text 3</div>
-                    <div class="text">Text 4</div>
-                    <div class="text">Text 5</div>
-                </div>
+          </div>
+          <div class="table-content">
+            <div class="table-column">
+              <div class="column-heading">Name</div>
+              <div class="text">Text 1</div>
+              <div class="text">Text 2</div>
+              <div class="text">Text 3</div>
+              <div class="text">Text 4</div>
+              <div class="text">Text 5</div>
             </div>
+            <div class="table-column">
+              <div class="column-heading black">.</div>
+              <div class="text">Text 1</div>
+              <div class="text">Text 2</div>
+              <div class="text">Text 3</div>
+              <div class="text">Text 4</div>
+              <div class="text">Text 5</div>
+            </div>
+            <div class="table-column">
+              <div class="column-heading">Amazon Card</div>
+              <div class="text">Text 1</div>
+              <div class="text">Text 2</div>
+              <div class="text">Text 3</div>
+              <div class="text">Text 4</div>
+              <div class="text">Text 5</div>
+            </div>
+            <div class="table-column">
+              <div class="column-heading black">.</div>
+              <div class="text">Text 1</div>
+              <div class="text">Text 2</div>
+              <div class="text">Text 3</div>
+              <div class="text">Text 4</div>
+              <div class="text">Text 5</div>
+            </div>
+            <div class="table-column">
+              <div class="column-heading">#####</div>
+              <div class="text">Text 1</div>
+              <div class="text">Text 2</div>
+              <div class="text">Text 3</div>
+              <div class="text">Text 4</div>
+              <div class="text">Text 5</div>
+            </div>
+            <div class="table-column">
+              <div class="column-heading black">.</div>
+              <div class="text">Text 1</div>
+              <div class="text">Text 2</div>
+              <div class="text">Text 3</div>
+              <div class="text">Text 4</div>
+              <div class="text">Text 5</div>
+            </div>
+          </div>
         </div>
-      
 
-        
         <div class="wallet-div">
-        <div class="table-heading">Live Tracking Gold</div>
-        <canvas id="myChart"></canvas></div>
-        
-        
+          <div class="table-heading">Live Tracking Gold</div>
+          <canvas id="myChart"></canvas>
+        </div>
+
         <div class="wallet-div">
-            <div class="row">
-                <div class="table-heading">
-                    Wallet
+          <div class="row">
+            <div
+              class="table-heading"
+              style="justify-content: space-between; font-weight: normal"
+            >
+              Wallet
+              <div class="golden-circle" style="width: 15%">
+                <div class="circle-border3">
+                  <div class="text-box" style="color: #fd749b">
+                    Withdraw Funds
+                  </div>
                 </div>
-                <div class="dots-container">
-                    <div class="dots"></div>
-                    <div class="dots"></div>
-                    <div class="dots"></div>
-                </div>
+              </div>
             </div>
             <div class="row">
-                <div class="inner-div">
+              <div class="inner-div">
                 <!-- <div class="photo"></div> -->
-                <img src="../assets/trophy.png" alt="trophy" class="trophy-photo">
-            </div>
-                <div class="inner-div">
-                    <div class="golden-box">
-                        <div class="circle-border">
-                            <div class="text-box">Total Earnings</div>
-                        </div>
-                    </div>
-                    <div class="text-am">$30000</div>
-                    <div class="text">Please note this’s the total sum of </div>
-                    <div class="text">ya’ transaction here on #####</div>
+                <img
+                  src="../assets/trophy.png"
+                  alt="trophy"
+                  class="trophy-photo"
+                />
+              </div>
+              <div class="inner-div">
+                <div class="golden-box">
+                  <div class="circle-border">
+                    <div class="text-box">Total Earnings</div>
+                  </div>
                 </div>
-                <div class="inner-div">
-                    <div class="golden-box">
-                        <div class="circle-border">
-                            <div class="text-box">Balance</div>
-                        </div>
-                    </div>
-                    <div class="text-am">$40000</div>
-                    <div class="text">Please note this’s the total sum of </div>
-                    <div class="text">ya’ transaction here on #####</div>
+                <div class="text-am">$30000</div>
+                <div class="text">Please note this’s the total sum of</div>
+                <div class="text">ya’ transaction here on #####</div>
+              </div>
+              <div class="inner-div">
+                <div class="golden-box">
+                  <div class="circle-border">
+                    <div class="text-box">Balance</div>
+                  </div>
                 </div>
+                <div class="text-am">$40000</div>
+                <div class="text">Please note this’s the total sum of</div>
+                <div class="text">ya’ transaction here on #####</div>
+              </div>
             </div>
+          </div>
         </div>
-        
-
-    </div>
-    </div>
-    <div class="bottom">
-        <div class="footer-divider"></div>
-        <footer>
-          <div class="left">
-            <div class="left-div1">
-              <span>CONTACT</span>
-              <span>TERM OF SERVICES</span>
-              <span>SHIPPING AND RETURNS</span>
-            </div>
-            <div class="left-div2">
-              <span>Terms of use and privacy policy.</span>
-            </div>
-          </div>
-          <div class="right">
-            <div class="right-div1">
-              <span>Give an email, get the newsletter.</span>
-              <span class="arrow">&#10140;</span>
-            </div>
-            <div class="footer-divider golden"></div>
-            <div class="right-div2">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-          </div>
-        </footer>
       </div>
-      
-      
-      
+    </div>
+
+    <div class="bottom">
+      <div class="footer-divider"></div>
+      <footer>
+        <div class="left">
+          <div class="left-div1">
+            <span>CONTACT</span>
+            <span>TERM OF SERVICES</span>
+            <span>SHIPPING AND RETURNS</span>
+          </div>
+          <div class="left-div2">
+            <span>Terms of use and privacy policy.</span>
+          </div>
+        </div>
+        <div class="right">
+          <div class="right-div1">
+            <span>Give an email, get the newsletter.</span>
+            <span class="arrow">&#10140;</span>
+          </div>
+          <div class="footer-divider golden"></div>
+          <div class="right-div2">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
     <script>
-        const sidebarIcons = document.querySelectorAll('.navbar');
-        const container = document.querySelector('.main-content');
-        
-        sidebarIcons.forEach(icon => {
-            icon.addEventListener('click', () => {
-                container.style.backgroundColor = 'transparent';
-                sidebarIcons.forEach(icon => icon.classList.remove('sidebar-active'));
-                icon.classList.add('sidebar-active');
-            });
+      const sidebarIcons = document.querySelectorAll(".navbar");
+      const container = document.querySelector(".main-content");
+
+      sidebarIcons.forEach((icon) => {
+        icon.addEventListener("click", () => {
+          container.style.backgroundColor = "transparent";
+          sidebarIcons.forEach((icon) =>
+            icon.classList.remove("sidebar-active")
+          );
+          icon.classList.add("sidebar-active");
         });
-        const xValues = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-        const yValues = [7, 8, 8, 9, 9, 9, 10];
-    
-        new Chart("myChart", {
-            type: "line",
-            data: {
-              labels: xValues,
-              datasets: [{
-                fill: true,
-                lineTension: 0,
-                backgroundColor: "rgba(70, 0, 77, 0.5)",
-                borderColor: "white",
-                pointBackgroundColor: "white",
-                data: yValues
-              }]
+      });
+      const xValues = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+      const yValues = [7, 8, 8, 9, 9, 9, 10];
+
+      new Chart("myChart", {
+        type: "line",
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              fill: true,
+              lineTension: 0,
+              backgroundColor: "rgba(70, 0, 77, 0.5)",
+              borderColor: "white",
+              pointBackgroundColor: "white",
+              data: yValues,
             },
-            options: {
-              legend: {
-                display: false
+          ],
+        },
+        options: {
+          legend: {
+            display: false,
+          },
+          scales: {
+            x: {
+              grid: {
+                display: false,
               },
-              scales: {
-                x: {
-                  grid: {
-                    display: false
-                  }
-                },
-                y: {
-                  grid: {
-                    display: false
-                  },
-                  ticks: {
-                    min: 6,
-                    max: 10
-                  }
-                }
-              }
-            }
-          });
-          
+            },
+            y: {
+              grid: {
+                display: false,
+              },
+              ticks: {
+                min: 6,
+                max: 10,
+              },
+            },
+          },
+        },
+      });
     </script>
-</body>
+  </body>
 </html>
