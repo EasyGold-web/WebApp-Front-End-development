@@ -245,7 +245,7 @@
         </div>
 
         <div class="wallet-div">
-          <div class="table-heading">Live Tracking Gold</div>
+          <div class="table-heading">&#128308;  Live Tracking Gold</div>
           <canvas id="myChart"></canvas>
         </div>
 
@@ -343,7 +343,7 @@
         });
     
         const xValues = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-        const yValues = [7, 8, 8, 9, 9, 9, 10];
+        const yValues = [7, 8, 8, 9, 9, 9, 7];
     
         new Chart("myChart", {
             type: "line",
@@ -363,23 +363,23 @@
                     display: false,
                 },
                 scales: {
-                    x: {
-                        grid: {
-                            display: false,
-                        },
-                    },
-                    y: {
-                        grid: {
-                            display: false,
-                        },
-                        ticks: {
-                            min: 6,
-                            max: 10,
-                        },
-                    },
-                },
-            },
-        });
-    </script>
+                  x: [{
+                      gridLines: {
+                          display: false,
+                      },
+                  }],
+                  y: [{
+                      gridLines: {
+                          display: false,
+                      },
+                      ticks: {
+                          min: 6,
+                          max: 10,
+                      },
+                  }],
+              },
+          },
+      });
+  </script>
   </body>
 </html>
