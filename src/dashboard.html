@@ -327,59 +327,59 @@
       </footer>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script>
-      const sidebarIcons = document.querySelectorAll(".navbar");
-      const container = document.querySelector(".main-content");
-
-      sidebarIcons.forEach((icon) => {
-        icon.addEventListener("click", () => {
-          container.style.backgroundColor = "transparent";
-          sidebarIcons.forEach((icon) =>
-            icon.classList.remove("sidebar-active")
-          );
-          icon.classList.add("sidebar-active");
+        const sidebarIcons = document.querySelectorAll(".navbar");
+        const container = document.querySelector(".main-content");
+    
+        sidebarIcons.forEach((icon) => {
+            icon.addEventListener("click", () => {
+                container.style.backgroundColor = "transparent";
+                sidebarIcons.forEach((icon) =>
+                    icon.classList.remove("sidebar-active")
+                );
+                icon.classList.add("sidebar-active");
+            });
         });
-      });
-      const xValues = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-      const yValues = [7, 8, 8, 9, 9, 9, 10];
-
-      new Chart("myChart", {
-        type: "line",
-        data: {
-          labels: xValues,
-          datasets: [
-            {
-              fill: true,
-              lineTension: 0,
-              backgroundColor: "rgba(70, 0, 77, 0.5)",
-              borderColor: "white",
-              pointBackgroundColor: "white",
-              data: yValues,
+    
+        const xValues = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+        const yValues = [7, 8, 8, 9, 9, 9, 10];
+    
+        new Chart("myChart", {
+            type: "line",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    fill: true,
+                    lineTension: 0.4, // Adjust this value for the desired curvature
+                    backgroundColor: "rgba(70, 0, 77, 0.5)",
+                    borderColor: "white",
+                    pointBackgroundColor: "white",
+                    data: yValues,
+                }, ],
             },
-          ],
-        },
-        options: {
-          legend: {
-            display: false,
-          },
-          scales: {
-            x: {
-              grid: {
-                display: false,
-              },
+            options: {
+                legend: {
+                    display: false,
+                },
+                scales: {
+                    x: {
+                        grid: {
+                            display: false,
+                        },
+                    },
+                    y: {
+                        grid: {
+                            display: false,
+                        },
+                        ticks: {
+                            min: 6,
+                            max: 10,
+                        },
+                    },
+                },
             },
-            y: {
-              grid: {
-                display: false,
-              },
-              ticks: {
-                min: 6,
-                max: 10,
-              },
-            },
-          },
-        },
-      });
+        });
     </script>
   </body>
 </html>
