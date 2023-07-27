@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Product Card/Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/product_desc.css" />
+    <link rel="stylesheet" href="../style/styleheader.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section id="hero">
+        <div>
+          <div id="bg51B4FA"></div>
+          <div id="bgF8A6F0"></div>
+          <div id="bgF8D997"></div>
+          <div class="mainblackbg" style="background-color: black">
+            <div class="fullscreenblur"></div>
+          </div>
+        </div>
+      </section>
+      
+    <div class="card-wrapper">
+      <div class="card">
+        <!-- card left -->
+        <div class="product-imgs">
+          <div class="img-display">
+            <div class="img-showcase">
+              <img src="../assets/prod1.png" alt="product image" />
+              <img src="../assets/prod2.png" alt="product image" />
+              <img src="../assets/prod3.png" alt="product image" />
+              <img src="../assets/prod4.png" alt="product image" />
+            </div>
+          </div>
+          <div class="img-select">
+            <div class="img-item">
+              <a href="#" data-id="1">
+                <img src="../assets/prod1.png" alt="product image" />
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#" data-id="2">
+                <img src="../assets/prod3.png" alt="product image" />
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#" data-id="3">
+                <img src="../assets/prod3.png" alt="product image" />
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#" data-id="4">
+                <img src="../assets/prod4.png" alt="product image" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card right -->
+        <div class="product-content">
+          <h2 class="product-title">Lira Earrings</h2>
+          <a href="#" class="product-link"></a>
+          <div class="product-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>4.7(21)</span>
+          </div>
+
+         
+
+          <div class="product-detail">
+     
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              eveniet veniam tempora fuga tenetur placeat sapiente architecto
+              illum soluta consequuntur, aspernatur quidem at sequi ipsa!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.
+            </p>
+          
+          </div>
+
+          <div class="purchase-info">
+            <input type="number" min="0" value="1" />
+            <button type="button" class="btn">
+              Add to Cart <i class="fas fa-shopping-cart"></i>
+            </button>
+            
+          </div>
+
+          <div class="social-links">
+            <p>Share At:</p>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-pinterest"></i>
+            </a>
+          </div>
+          <ul>
+            <li><span style="color: yellow;">SKU:</span> <span>12</span></li>
+            <li><span style="color: yellow;">Available:</span> <span>in stock</span></li>
+            <li><span style="color: yellow;">Category:</span> <span>Fashion, Style</span></li>
+          </ul>          
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="tab-section">
+        <div class="tab-header">
+          <div class="tab-item active" onclick="showTab('descriptionContent', this)">
+            Description
+          </div>
+          <div class="tab-item" onclick="showTab('additionalInfoContent', this)">
+            Additional Information
+          </div>
+          <div class="tab-item" onclick="showTab('reviewContent', this)">
+            Review
+          </div>
+        </div>
+        <div class="tab-divider active" id="tabDivider"></div>
+        <div class="tab-content active" id="descriptionContent">
+          <!-- Description Content Here -->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+            eveniet veniam tempora fuga tenetur placeat sapiente architecto
+            illum soluta consequuntur, aspernatur quidem at sequi ipsa!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.
+          </p>
+        </div>
+        <div class="tab-content" id="additionalInfoContent">
+          <!-- Additional Information Content Here -->
+          <p>
+            Additional information about the product goes here.
+          </p>
+        </div>
+        <div class="tab-content" id="reviewContent">
+          <!-- Review Content Here -->
+          <p>
+            Reviews from customers will be displayed here.
+          </p>
+        </div>
+      </div>
+
+    <div class="bottom">
+        <div class="footer-divider"></div>
+        <footer>
+          <div class="left">
+            <div class="left-div1">
+              <span>CONTACT</span>
+              <span>TERM OF SERVICES</span>
+              <span>SHIPPING AND RETURNS</span>
+            </div>
+            <div class="left-div2">
+              <span>Terms of use and privacy policy.</span>
+            </div>
+          </div>
+          <div class="right">
+            <div class="right-div1">
+              <span>Give an email, get the newsletter.</span>
+              <span class="arrow">&#10140;</span>
+            </div>
+            <div class="footer-divider golden"></div>
+            <div class="right-div2">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    <script>
+
+        function showTab(tabId, tabItem) {
+            const tabContent = document.getElementById(tabId);
+            const tabDivider = document.getElementById("tabDivider");
+            const allTabs = document.querySelectorAll(".tab-content");
+            const allTabItems = document.querySelectorAll(".tab-item");
+      
+            allTabs.forEach((tab) => {
+              tab.style.display = "none";
+            });
+      
+            allTabItems.forEach((item) => {
+              item.classList.remove("active");
+            });
+      
+            tabContent.style.display = "block";
+            tabDivider.style.backgroundColor = "yellow";
+            tabItem.classList.add("active");
+          }
+
+          window.addEventListener("load", function() {
+            const defaultTab = document.querySelector(".tab-item.active");
+            const defaultContent = document.querySelector(".tab-content.active");
+      
+            defaultTab.classList.add("active");
+            defaultContent.style.display = "block";
+            document.getElementById("tabDivider").style.backgroundColor = "yellow";
+          });
+      const imgs = document.querySelectorAll(".img-select a");
+      const imgBtns = [...imgs];
+      let imgId = 1;
+
+      imgBtns.forEach((imgItem) => {
+        imgItem.addEventListener("click", (event) => {
+          event.preventDefault();
+          imgId = imgItem.dataset.id;
+          slideImage();
+        });
+      });
+
+      function slideImage() {
+        const displayWidth = document.querySelector(
+          ".img-showcase img:first-child"
+        ).clientWidth;
+
+        document.querySelector(".img-showcase").style.transform = `translateX(${
+          -(imgId - 1) * displayWidth
+        }px)`;
+      }
+
+      window.addEventListener("resize", slideImage);
+    </script>
+  </body>
+</html>
