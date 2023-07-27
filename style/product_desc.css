@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 *{
     box-sizing: border-box;
@@ -193,6 +194,8 @@ img{
 @media screen and (min-width: 992px){
     .tab-section {
         margin: 20%;
+        margin-top: 0;
+        margin-bottom: 3rem;
     }
     .card{
         display: grid;
@@ -220,6 +223,9 @@ img{
         width: 60px;
         height: 60px;
     }
+    .similar-products{
+        margin: 1rem;
+      }
 }
 footer {
     display: flex;
@@ -301,7 +307,6 @@ footer {
   }
   
   @media (max-width: 768px) {
-    @media (max-width: 768px) {
         footer {
           flex-direction: column;
         }
@@ -345,7 +350,8 @@ footer {
             font-size: 9px;
             flex-direction: column;
           }
-      }}
+        
+      }
 
 
       .tab-section {
@@ -365,7 +371,7 @@ footer {
       .tab-item {
         cursor: pointer;
         font-size: 1rem;
-        color: #000;
+        color: #ffffff;
         opacity: 0.7;
         transition: opacity 0.2s ease;
       }
@@ -396,14 +402,17 @@ footer {
       }
   
       .similar-products-section {
-        margin-top: 2rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1rem;
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 1rem;
       }
   
       .similar-product-item {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
   
       .similar-product-image {
@@ -411,24 +420,30 @@ footer {
         max-width: 250px;
       }
   
+      .similar-product-details {
+        margin-top: 0.5rem;
+        text-align: center;
+      }
+  
       .similar-product-name {
         font-size: 1rem;
         font-weight: 600;
-        margin-top: 0.5rem;
+        color:#ffc107;
       }
   
       .similar-product-price {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         color: #888;
       }
-  
-      /* Mobile responsiveness */
-      @media screen and (max-width: 768px) {
-        .similar-products-section {
-          grid-template-columns: 1fr;
-        }
-  
-        .similar-product-item {
-          margin-bottom: 1rem;
-        }
+    
+      .custom-heading{
+        display: flex;
+        justify-content: center;
+        color: #FFB500;
+      }
+      .similar-products{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 4rem;
       }
