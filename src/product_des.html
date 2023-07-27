@@ -17,16 +17,16 @@
   </head>
   <body>
     <section id="hero">
-        <div>
-          <div id="bg51B4FA"></div>
-          <div id="bgF8A6F0"></div>
-          <div id="bgF8D997"></div>
-          <div class="mainblackbg" style="background-color: black">
-            <div class="fullscreenblur"></div>
-          </div>
+      <div>
+        <div id="bg51B4FA"></div>
+        <div id="bgF8A6F0"></div>
+        <div id="bgF8D997"></div>
+        <div class="mainblackbg" style="background-color: black">
+          <div class="fullscreenblur"></div>
         </div>
-      </section>
-      
+      </div>
+    </section>
+
     <div class="card-wrapper">
       <div class="card">
         <!-- card left -->
@@ -75,10 +75,7 @@
             <span>4.7(21)</span>
           </div>
 
-         
-
           <div class="product-detail">
-     
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
               eveniet veniam tempora fuga tenetur placeat sapiente architecto
@@ -88,7 +85,6 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.
             </p>
-          
           </div>
 
           <div class="purchase-info">
@@ -96,7 +92,6 @@
             <button type="button" class="btn">
               Add to Cart <i class="fas fa-shopping-cart"></i>
             </button>
-            
           </div>
 
           <div class="social-links">
@@ -118,74 +113,90 @@
             </a>
           </div>
           <ul>
-            <li><span style="color: yellow;">SKU:</span> <span>12</span></li>
-            <li><span style="color: yellow;">Available:</span> <span>in stock</span></li>
-            <li><span style="color: yellow;">Category:</span> <span>Fashion, Style</span></li>
-          </ul>          
+            <li><span style="color: yellow">SKU:</span> <span>12</span></li>
+            <li>
+              <span style="color: yellow">Available:</span>
+              <span>in stock</span>
+            </li>
+            <li>
+              <span style="color: yellow">Category:</span>
+              <span>Fashion, Style</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    
 
     <div class="tab-section">
-        <div class="tab-header">
-          <div class="tab-item active" onclick="showTab('descriptionContent', this)">
-            Description
-          </div>
-          <div class="tab-item" onclick="showTab('additionalInfoContent', this)">
-            Additional Information
-          </div>
-          <div class="tab-item" onclick="showTab('reviewContent', this)">
-            Review
-          </div>
+      <div class="tab-header">
+        <div
+          class="tab-item active"
+          onclick="showTab('descriptionContent', this)"
+        >
+          Description
         </div>
-        <div class="tab-divider active" id="tabDivider"></div>
-        <div class="tab-content active" id="descriptionContent">
-          <!-- Description Content Here -->
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-            eveniet veniam tempora fuga tenetur placeat sapiente architecto
-            illum soluta consequuntur, aspernatur quidem at sequi ipsa!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.
-          </p>
+        <div class="tab-item" onclick="showTab('additionalInfoContent', this)">
+          Additional Information
         </div>
-        <div class="tab-content" id="additionalInfoContent">
-          <!-- Additional Information Content Here -->
-          <p>
-            Additional information about the product goes here.
-          </p>
-        </div>
-        <div class="tab-content" id="reviewContent">
-          <!-- Review Content Here -->
-          <p>
-            Reviews from customers will be displayed here.
-          </p>
+        <div class="tab-item" onclick="showTab('reviewContent', this)">
+          Review
         </div>
       </div>
-     
-      <div class="similar-products">
+      <div class="tab-divider active" id="tabDivider"></div>
+      <div class="tab-content active" id="descriptionContent">
+        <!-- Description Content Here -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet
+          veniam tempora fuga tenetur placeat sapiente architecto illum soluta
+          consequuntur, aspernatur quidem at sequi ipsa!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+          perferendis eius. Dignissimos, labore suscipit. Unde.
+        </p>
+      </div>
+      <div class="tab-content" id="additionalInfoContent">
+        <!-- Additional Information Content Here -->
+        <p>Additional information about the product goes here.</p>
+      </div>
+      <div class="tab-content" id="reviewContent">
+        <!-- Review Content Here -->
+        <p>Reviews from customers will be displayed here.</p>
+      </div>
+    </div>
+
+    <div class="similar-products">
       <h2 class="custom-heading">Similar Products</h2>
-     
+
       <div class="similar-products-section">
         <div class="similar-product-item">
-          <img src="../assets/prod1.png" alt="Similar Product 1" class="similar-product-image" />
+          <img
+            src="../assets/prod1.png"
+            alt="Similar Product 1"
+            class="similar-product-image"
+          />
           <div class="similar-product-details">
             <div class="similar-product-name">Similar Product 1</div>
             <div class="similar-product-price">$19.99</div>
           </div>
         </div>
         <div class="similar-product-item">
-          <img src="../assets/prod4.png" alt="Similar Product 2" class="similar-product-image" />
+          <img
+            src="../assets/prod4.png"
+            alt="Similar Product 2"
+            class="similar-product-image"
+          />
           <div class="similar-product-details">
             <div class="similar-product-name">Similar Product 2</div>
             <div class="similar-product-price">$24.99</div>
           </div>
         </div>
         <div class="similar-product-item">
-          <img src="../assets/prod3.png" alt="Similar Product 3" class="similar-product-image" />
+          <img
+            src="../assets/prod3.png"
+            alt="Similar Product 3"
+            class="similar-product-image"
+          />
           <div class="similar-product-details">
             <div class="similar-product-name">Similar Product 3</div>
             <div class="similar-product-price">$29.99</div>
@@ -195,61 +206,60 @@
     </div>
 
     <div class="bottom">
-        <div class="footer-divider"></div>
-        <footer>
-          <div class="left">
-            <div class="left-div1">
-              <span>CONTACT</span>
-              <span>TERM OF SERVICES</span>
-              <span>SHIPPING AND RETURNS</span>
-            </div>
-            <div class="left-div2">
-              <span>Terms of use and privacy policy.</span>
-            </div>
+      <div class="footer-divider"></div>
+      <footer>
+        <div class="left">
+          <div class="left-div1">
+            <span>CONTACT</span>
+            <span>TERM OF SERVICES</span>
+            <span>SHIPPING AND RETURNS</span>
           </div>
-          <div class="right">
-            <div class="right-div1">
-              <span>Give an email, get the newsletter.</span>
-              <span class="arrow">&#10140;</span>
-            </div>
-            <div class="footer-divider golden"></div>
-            <div class="right-div2">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
+          <div class="left-div2">
+            <span>Terms of use and privacy policy.</span>
           </div>
-        </footer>
-      </div>
+        </div>
+        <div class="right">
+          <div class="right-div1">
+            <span>Give an email, get the newsletter.</span>
+            <span class="arrow">&#10140;</span>
+          </div>
+          <div class="footer-divider golden"></div>
+          <div class="right-div2">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
     <script>
+      function showTab(tabId, tabItem) {
+        const tabContent = document.getElementById(tabId);
+        const tabDivider = document.getElementById("tabDivider");
+        const allTabs = document.querySelectorAll(".tab-content");
+        const allTabItems = document.querySelectorAll(".tab-item");
 
-        function showTab(tabId, tabItem) {
-            const tabContent = document.getElementById(tabId);
-            const tabDivider = document.getElementById("tabDivider");
-            const allTabs = document.querySelectorAll(".tab-content");
-            const allTabItems = document.querySelectorAll(".tab-item");
-      
-            allTabs.forEach((tab) => {
-              tab.style.display = "none";
-            });
-      
-            allTabItems.forEach((item) => {
-              item.classList.remove("active");
-            });
-      
-            tabContent.style.display = "block";
-            tabDivider.style.backgroundColor = "yellow";
-            tabItem.classList.add("active");
-          }
+        allTabs.forEach((tab) => {
+          tab.style.display = "none";
+        });
 
-          window.addEventListener("load", function() {
-            const defaultTab = document.querySelector(".tab-item.active");
-            const defaultContent = document.querySelector(".tab-content.active");
-      
-            defaultTab.classList.add("active");
-            defaultContent.style.display = "block";
-            document.getElementById("tabDivider").style.backgroundColor = "yellow";
-          });
+        allTabItems.forEach((item) => {
+          item.classList.remove("active");
+        });
+
+        tabContent.style.display = "block";
+        tabDivider.style.backgroundColor = "yellow";
+        tabItem.classList.add("active");
+      }
+
+      window.addEventListener("load", function () {
+        const defaultTab = document.querySelector(".tab-item.active");
+        const defaultContent = document.querySelector(".tab-content.active");
+
+        defaultTab.classList.add("active");
+        defaultContent.style.display = "block";
+        document.getElementById("tabDivider").style.backgroundColor = "yellow";
+      });
       const imgs = document.querySelectorAll(".img-select a");
       const imgBtns = [...imgs];
       let imgId = 1;
