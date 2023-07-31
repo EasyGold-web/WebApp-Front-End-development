@@ -395,6 +395,9 @@ img{
     .product-detail{
       padding-top: 0.7rem;
     }
+    li{
+      padding-top: 0.7rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
