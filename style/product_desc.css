@@ -372,7 +372,7 @@ img{
     .card{
         display: grid;
         grid-template-columns: repeat(3, auto);
-        grid-gap: 1.5rem;
+        grid-gap: 2rem;
     }
     .card-wrapper{
         height: 100vh;
@@ -387,8 +387,14 @@ img{
     }
     .product-content{
         padding-top: 0;
+        margin: 0.3rem;
     }
-    
+    .product-title,  .purchase-info{
+      padding-bottom: 0.7rem;
+    }
+    .product-detail{
+      padding-top: 0.7rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
