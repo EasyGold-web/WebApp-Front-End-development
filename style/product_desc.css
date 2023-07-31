@@ -614,6 +614,7 @@ footer {
         display: flex;
         justify-content: center;
         color: #FFB500;
+        padding-bottom: 2.5rem;
       }
       .similar-products{
         display: flex;
