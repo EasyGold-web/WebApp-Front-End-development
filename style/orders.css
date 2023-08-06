@@ -297,5 +297,6 @@ footer {
   @media screen and (min-width: 992px){
     .bottom{
         margin: 15%;
+        margin-right: 2%;
     }
     }
