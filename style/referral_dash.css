@@ -24,6 +24,7 @@
   }
   .right-column{
     flex: 0.4;
+    margin-bottom: 7rem;
   }
   
   .black-box, .white-box-row, .white-box {
@@ -141,6 +142,66 @@
     margin-top: 10px;
   }
 
+  /* Additional styles for the right column */
+
+  .right-text-b {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .right-space {
+    height: 50px;
+  }
+  .right-space-t {
+    height: 200px;
+  }
+  
+  .right-paragraph {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .copy-text {
+    font-size: medium;
+    text-align: center;
+    color: #BE9751;
+    font-weight: bold;
+  }
+  
+  .copy-box {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 3rem;
+    margin-top: 0.2rem;
+  }
+  
+  .copy-content {
+    flex: 1;
+  }
+  
+  .copy-icon {
+    font-size: large;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+ 
+  .terms {
+    margin: 3rem;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+  }
+  
   @media screen and (max-width: 768px) {
     .container-h {
         display: flex;
@@ -149,12 +210,17 @@
         margin-top: 20%;
       }
       .container {
-        flex-direction: column; /* Stack columns on smaller screens */
+        flex-direction: row; /* Stack columns on smaller screens */
       }
     
       .left-column, .right-column {
         padding: 10px;
         text-align: center;
+      }
+
+      .right-text-b {
+        font-size: 20px;
+        font-weight: bold;
       }
     
       .l-black-box {
@@ -193,4 +259,30 @@
         width: 50%;
         margin: 10px auto;
       }
+      .black-box{
+        padding: 1.5rem;
+      }
+      .right-column {
+        padding: 10px;
+        text-align: start;
+        flex: 1;
+        width: 100%;
+        margin-left: 3rem;
+      }
+      .terms {
+        margin: 1rem;
+        font-size: 12px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: underline;
+      }
+      .black-box{
+        width: 112%;
+      }
+      .right-space-t {
+        height: 50px;
+      }
     }
+
