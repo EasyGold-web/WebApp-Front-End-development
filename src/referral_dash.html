@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/dash.css" />
+    <link rel="stylesheet" href="../style/styleheader.css" />
+    <link rel="stylesheet" href="../style/referral_dash.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <style></style>
+  </head>
+  <body style="background-color: rgba(0, 0, 0, 0.75)" class="fade-in">
+    <section id="hero">
+      <div>
+        <div id="bg51B4FA"></div>
+        <div id="bgF8A6F0"></div>
+        <div id="bgF8D997"></div>
+        <div class="mainblackbg" style="background-color: black">
+          <div class="fullscreenblur"></div>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="divider-vertical"></div>
+    <div class="divider-horizontal"></div> -->
+    <header>
+      <div>
+        <div class="logoimg">
+          <img src="../assets/Logo.png" alt="" />
+        </div>
+        <div class="logo">Easy Gold</div>
+      </div>
+      <div class="hamwrap">
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <div class="search-container">
+              <input type="text" placeholder="Search" class="search-bar" />
+              <!-- <button type="submit" class="search-button"><i class="fa fa-search"></i></button> -->
+            </div>
+          </li>
+          <li>
+            <a href=""> </a>
+          </li>
+          <li class="user-profile">
+            <img
+              src="../assets/Logo.png"
+              alt="Profile Photo"
+              class="profile-photo"
+            />
+            <a href="">Hello, Vignesh</a>
+          </li>
+
+          <li>
+            <a href="">Shop</a>
+          </li>
+          <li>
+            <a href="">Contact Us</a>
+          </li>
+          <li>
+            <a href="">Sign In</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="sidebar">
+      <i class="sidebar-icon active fas fa-home"></i>
+      <span class="sidebar-text">Dashboard</span>
+      <i class="sidebar-icon fas fa-chart-line"></i>
+      <span class="sidebar-text">Explore</span>
+      <i class="sidebar-icon fas fa-wallet"></i>
+      <span class="sidebar-text">Wallet</span>
+      <i class=""></i>
+      <span class="sidebar-text"></span>
+      <i class="sidebar-icon fas fa-exchange-alt"></i>
+      <span class="sidebar-text sidebar-active">Referral</span>
+    </div>
+
+    <div class="">
+      <script>
+        // JavaScript code for the hamburger icon functionality
+        const hamburger = document.querySelector(".hamburger");
+        const navBar = document.querySelector(".sidebar");
+        <!-- nav-bar ul -->
+        hamburger.addEventListener("click", function () {
+          hamburger.classList.toggle("active");
+          navBar.classList.toggle("show");
+        });
+      </script>
+    </div>
+    <div>
+        <div class="container-h">
+            <h1>Referrals</h1>
+            <h4>Keep track of all your referrals</h2>
+        </div>
+      <div class="container">
+        <div class="left-column">
+          <div class="l-black-box">
+            <div class="green-box">
+              <p>To become EasyGold advocate refer up to 8 friends</p>
+            </div>
+            <div class="text-box">
+              <p style="font-size: large; font-weight: bold">REWARDS</p>
+              <div class="t-white-circle"></div>
+              <p>Coupon</p>
+              <div class="t-white-circle"></div>
+              <p>Coupon</p>
+              <div class="t-white-circle"></div>
+              <p>Coupon</p>
+            </div>
+            <div class="progress-box">
+              <div class="progress"></div>
+            </div>
+
+            <p style="font-size: large; font-weight: bold; margin-top: 1.5rem;">
+              Invite 3 more to get a Free Sample
+            </p>
+          </div>
+          <div class="white-box-row">
+            <div class="white-box">
+              <div class="column ">
+                <div class="w-8">
+                <p class="bold-text">0</p>
+                <p class="bold-text">FRIENDS INVITED</p></div>
+                <div class="row w-2">
+                    <span class="arrow">&#10140;</span>
+                  </div>
+              </div>
+             
+            </div>
+            <div class="white-box">
+                <div class="column ">
+                  <div class="w-8">
+                  <p class="bold-text">0</p>
+                  <p class="bold-text">FRIENDS REFERRED</p></div>
+                  <div class="row w-2">
+                      <span class="arrow">&#10140;</span>
+                    </div>
+                </div>
+               
+              </div>
+          </div>
+
+          <div class="white-box-row">
+            <div class="white-box">
+              <div class="column ">
+                <div class="w-8">
+                <p class="bold-text">0</p>
+                <p class="bold-text">CREDITS EARNED</p></div>
+                <div class="row w-2">
+                    <span class="arrow">&#10140;</span>
+                  </div>
+              </div>
+             
+            </div>
+            <div class="white-box">
+                <div class="column ">
+                  <div class="w-8">
+                  <p class="bold-text">0</p>
+                  <p class="bold-text">pending CREDITS</p></div>
+                  <div class="row w-2">
+                      <span class="arrow">&#10140;</span>
+                    </div>
+                </div>
+               
+              </div>
+          </div>
+          
+
+          <div class="white-box full-width">
+            <p class="bold-text">PENDING INVITES (0)</p>
+            <div class="divider"></div>
+          </div>
+          
+        </div>
+        <div class="right-column">
+          <div class="black-box"></div>
+        </div>
+      </div>
+
+      <!-- <div class="bottom">
+            <div class="footer-divider"></div>
+            <footer>
+              <div class="left">
+                <div class="left-div1">
+                  <span>CONTACT</span>
+                  <span>TERM OF SERVICES</span>
+                  <span>SHIPPING AND RETURNS</span>
+                </div>
+                <div class="left-div2">
+                  <span>Terms of use and privacy policy.</span>
+                </div>
+              </div>
+              <div class="right">
+                <div class="right-div1">
+                  <span>Give an email, get the newsletter.</span>
+                  <span class="arrow">&#10140;</span>
+                </div>
+                <div class="footer-divider golden"></div>
+                <div class="right-div2">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </footer>
+          </div> -->
+    </div>
+  </body>
+</html>

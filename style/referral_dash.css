@@ -1,0 +1,196 @@
+  
+  .container {
+    display: flex;
+    align-items: stretch;
+    height: 90vh;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 2%;
+  }
+  .container-h {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-top: 3%;
+  }
+  
+  .left-column, .right-column {
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: start;
+  }
+  .left-column{
+    flex: 0.6;
+  }
+  .right-column{
+    flex: 0.4;
+  }
+  
+  .black-box, .white-box-row, .white-box {
+ 
+    border-radius: 15px;
+    min-height: 100px; /* Adjust as needed */
+  }
+  .green-box{
+    background-color: #BE9751;
+    border-radius: 15px;
+    text-align: start;
+    font-weight: bold;
+    font-size: large;
+    padding-left: 0.2rem;
+    margin: 1.5rem;
+    margin-left: 0;
+  }
+  .text-box{
+    display: flex;
+    margin: 1rem;
+    margin-left: 0%;
+    flex-direction: row;
+   
+  }
+  .l-black-box{
+    border-radius: 15px;
+    background-color: black;
+    margin-bottom: 2rem; 
+    margin-right: 2rem;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    justify-content: space-between;
+  }
+  .white-box-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem; 
+    margin-right: 2rem;
+  }
+  
+  .white-box {
+    /* background-color: white; */
+    border: 2px solid rgb(255, 255, 255);
+    flex-basis: 70%; 
+    border-radius: 15px;
+    margin-bottom: 2rem; 
+    margin-right: 2rem;/* 70% width for white boxes */
+    padding: 2rem;
+  }
+  
+  .black-box {
+    background-color: black;
+    flex-basis: 30%; /* 30% width for black boxes */
+    height: 100%; /* Full height for black boxes */
+  }
+  
+  .full-width {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 90%;
+    margin-right: 3rem !important;
+  }
+  
+  .t-white-circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 1rem !important;
+    margin-right: 0.2rem;
+  }
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack columns on smaller screens */
+    }
+    
+    
+  }
+
+/* Your existing CSS styles */
+
+.bold-text {
+    font-weight:900;
+    font-size: large;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  .arrow{
+    font-size: xx-large;
+  }
+.column{
+    display: flex;
+    flex-direction: row;
+}
+  
+  .next-icon {
+    color: white;
+    font-size: 12px;
+  }
+  .w-8{
+    flex: 0.9;
+  }
+  .w-2{
+    flex: 0.1;
+  }
+ 
+  
+  .divider {
+    width: 50%;
+    height: 2px;
+    background-color: white;
+    margin-top: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container-h {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-top: 20%;
+      }
+      .container {
+        flex-direction: column; /* Stack columns on smaller screens */
+      }
+    
+      .left-column, .right-column {
+        padding: 10px;
+        text-align: center;
+      }
+    
+      .l-black-box {
+        margin: 1rem;
+        margin-left: 2rem;
+        padding: 10px;
+        width: 80%;
+      }
+      .text-box{
+        font-size: 12px;
+      }
+      .green-box, .text-box, .progress-box {
+        margin: 10px 0;
+      }
+    
+      .white-box-row {
+        flex-direction: column;
+       
+            justify-content: space-between;
+            margin-bottom: -1rem;
+            margin-right: 1rem;
+          
+    }
+    
+      .white-box {
+        margin: 1.8rem;
+        padding: 10px;
+        text-align: center;
+      }
+    
+      .arrow {
+        font-size: xx-large;
+      }
+    
+      .divider {
+        width: 50%;
+        margin: 10px auto;
+      }
+    }
