@@ -286,3 +286,20 @@
       }
     }
 
+    .copy-box {
+      display: flex;
+      align-items: center;
+      border: 2px solid #ccc;
+      padding: 10px;
+    }
+    
+    .copy-text {
+      flex-grow: 1;
+      color: #000;
+    }
+    
+    .copy-icon {
+      cursor: pointer;
+      color: #000;
+    }
+    

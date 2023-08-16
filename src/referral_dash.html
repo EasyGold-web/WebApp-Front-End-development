@@ -197,9 +197,10 @@
               <div class="right-space"></div>
               <p class="copy-text">Or copy your personal link</p>
               <div class="copy-box">
-                
+                <div class="copy-text">Text to Copy</div>
                 <div class="copy-icon">&#x2398;</div>
               </div>
+              
               <div class="right-space" ></div>
               
         
@@ -248,5 +249,23 @@
             </footer>
           </div> -->
     </div>
+    <script>const copyIcons = document.querySelectorAll('.copy-icon');
+      copyIcons.forEach(icon => {
+        icon.addEventListener('click', () => {
+          const textElement = icon.previousElementSibling;
+          const text = textElement.textContent;
+          copyToClipboard(text);
+        });
+      });
+      
+      function copyToClipboard(text) {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+      }
+      </script>
   </body>
 </html>
