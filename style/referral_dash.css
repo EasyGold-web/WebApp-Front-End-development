@@ -302,4 +302,6 @@
       cursor: pointer;
       color: #000;
     }
-    
+    .socials >a >img{
+      margin: 1rem;
+    }
