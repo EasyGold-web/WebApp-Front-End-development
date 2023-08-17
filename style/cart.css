@@ -223,6 +223,17 @@ h1 {
     padding: 10px;
     cursor: pointer;
 }
+.country-select {
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin-bottom: 10px;
+    padding: 5px;
+    outline: none;
+    width: 100%;
+    margin: 1rem;
+    margin-left: 0%;
+    background-color: transparent;
+}
 
 @media (max-width: 768px) {
     .c-columns {
@@ -249,7 +260,6 @@ h1 {
         padding: 2rem;
     }
     .input-column {
-        margin: 1rem;
         padding-left: 1rem;
         width: 200%;
     }
