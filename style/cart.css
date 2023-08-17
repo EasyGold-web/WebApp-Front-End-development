@@ -1,0 +1,307 @@
+.c-container {
+    max-width: 100%;
+    margin: 5rem;
+    padding: 20px;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.c-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.c-column {
+    width: 50%;
+}
+
+.left-box {
+    /* background-color: white; */
+    height: 100px;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.right-box {
+    background-color: black;
+    height: 100px;
+}
+
+/* Style the left box */
+.left-box {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    margin: 10px;
+}
+
+.left-box-c {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    margin: 10px;
+}
+
+.image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.text-box p {
+    margin-bottom: 5px;
+}
+
+.quantity-box {
+    display: flex;
+    align-items: center;
+}
+
+.minus-button, .plus-button {
+    border: none;
+    background-color: #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.quantity {
+    margin: 0 10px;
+}
+
+.remove-button {
+   
+    top: 5px;
+    right: 5px;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+}
+.p-name{
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFB500;
+}
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin: 1rem 0;
+}
+
+.input-column {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+.input-field {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    outline: none;
+}
+
+.button-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+    padding: 3rem;
+}
+
+.black-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.white-button {
+    color: white;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+.right-box {
+    height: 100%;
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    margin: 3rem;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-self: flex-start;
+}
+
+.totals-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.totals-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.totals-left, .totals-right {
+    flex: 1;
+}
+.totals-right{
+    text-align: left;
+    
+}
+.totals-right div{
+    margin-bottom: 2rem;
+}
+.totals-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.totals-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.totals-desc {
+    color: gray;
+}
+
+.shipping-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fa-caret-down {
+    margin-left: 5px;
+}
+
+.shipping-dropdown {
+    color: #ccc;
+    margin: 3rem;
+    margin-left: 0%;
+    margin-top: auto;
+}
+
+.shipping-input {
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+    padding: 5px;
+    outline: none;
+}
+
+.update-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .c-columns {
+        flex-direction: column;
+    }
+    .c-column {
+        width: 100%;
+    }
+    .text-box {
+        text-align: center;
+        font-size: 10px;
+        padding: 1rem;
+        padding-right: 0%;
+    }
+    .p-name{
+        font-size: 12px;
+    }
+    .image img {
+        width: 80px;
+        height: 80px;
+    }
+    .quantity-box {
+        justify-content: center;
+        padding: 2rem;
+    }
+    .input-column {
+        margin: 1rem;
+        padding-left: 1rem;
+        width: 200%;
+    }
+    .left-box-c
+    {
+        flex-direction: column-reverse;
+    }
+    .button-column{
+        margin: 0;
+        padding: 0;
+        flex-direction: row;
+    }
+    .c-column{
+        width: 100%;
+    }
+    .right-box {
+        width: 300%;
+        padding: 15px;
+        margin: 1rem;
+        margin-left: -100%;
+    }
+
+    .totals-text {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .totals-container {
+        flex-direction: column;
+    }
+
+    .totals-right div {
+        margin-bottom: 1rem;
+        width: 90%;
+    }
+    .totals-right button{
+        width: 100%;
+    }
+
+    .shipping-text {
+        font-size: 16px;
+    }
+
+    .shipping-dropdown {
+        margin: 1rem;
+    }
+    .total{
+        display: flex;
+        flex-direction: row;
+        margin-left: 3rem;
+    }
+    .container{
+        margin-left: 0% !important;
+    }
+}

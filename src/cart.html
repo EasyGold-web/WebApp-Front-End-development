@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/dash.css" />
+    <link rel="stylesheet" href="../style/styleheader.css" />
+    <link rel="stylesheet" href="../style/cart.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <style></style>
+  </head>
+  <body style="background-color: rgba(0, 0, 0, 0.75)" class="fade-in">
+    <section id="hero">
+      <div>
+        <div id="bg51B4FA"></div>
+        <div id="bgF8A6F0"></div>
+        <div id="bgF8D997"></div>
+        <div class="mainblackbg" style="background-color: black">
+          <div class="fullscreenblur"></div>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="divider-vertical"></div>
+    <div class="divider-horizontal"></div> -->
+    <header>
+      <div>
+        <div class="logoimg">
+          <img src="../assets/Logo.png" alt="" />
+        </div>
+        <div class="logo">Easy Gold</div>
+      </div>
+      <div class="hamwrap">
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <div class="search-container">
+              <input type="text" placeholder="Search" class="search-bar" />
+              <!-- <button type="submit" class="search-button"><i class="fa fa-search"></i></button> -->
+            </div>
+          </li>
+          <li>
+            <a href=""> </a>
+          </li>
+          <li class="user-profile">
+            <img
+              src="../assets/Logo.png"
+              alt="Profile Photo"
+              class="profile-photo"
+            />
+            <a href="">Hello, Vignesh</a>
+          </li>
+
+          <li>
+            <a href="">Shop</a>
+          </li>
+          <li>
+            <a href="">Contact Us</a>
+          </li>
+          <li>
+            <a href="">Sign In</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="">
+      <script>
+        // JavaScript code for the hamburger icon functionality
+        const hamburger = document.querySelector(".hamburger");
+        const navBar = document.querySelector(".sidebar");
+        <!-- nav-bar ul -->
+        hamburger.addEventListener("click", function () {
+          hamburger.classList.toggle("active");
+          navBar.classList.toggle("show");
+        });
+      </script>
+    </div>
+   
+    <div class="c-container">
+      <h1>Shopping Cart</h1>
+      <div class="c-columns">
+        <div class="c-column">
+            <div class="left-box">
+                <div class="image"><img src="../assets/photo2.png" alt="Product Image"></div>
+                <div class="text-box">
+                    <p class="p-name">Liara Earnings</p>
+                    <p>Black / Medium</p>
+                    <p>Category</p>
+                </div>
+                <div class="quantity-box">
+                    <button class="minus-button">-</button>
+                    <span class="quantity">1</span>
+                    <button class="plus-button">+</button>
+                </div>
+                <button class="remove-button">&#x2716;</button>
+              </div>
+              <div class="divider"></div>
+
+              <div class="left-box">
+                <div class="image"><img src="../assets/photo2.png" alt="Product Image"></div>
+                <div class="text-box">
+                    <p class="p-name">Liara Earnings</p>
+                    <p>Black / Medium</p>
+                    <p>Category</p>
+                </div>
+                <div class="quantity-box">
+                    <button class="minus-button">-</button>
+                    <span class="quantity">1</span>
+                    <button class="plus-button">+</button>
+                </div>
+                <button class="remove-button">&#x2716;</button>
+              </div>
+              <div class="divider"></div>
+              <div class="left-box">
+                <div class="image"><img src="../assets/photo2.png" alt="Product Image"></div>
+                <div class="text-box">
+                    <p class="p-name">Liara Earnings</p>
+                    <p>Black / Medium</p>
+                    <p>Category</p>
+                </div>
+                <div class="quantity-box">
+                    <button class="minus-button">-</button>
+                    <span class="quantity">1</span>
+                    <button class="plus-button">+</button>
+                </div>
+                <button class="remove-button">&#x2716;</button>
+              </div>
+              <div class="divider"></div>
+             
+              <div class="left-box-c">
+                <div class="input-column">
+                    <input type="text" class="input-field" placeholder="Coupon Code">
+                </div>
+                <div class="button-column">
+                    <button class="white-button">Update Cart</button>
+                    <button class="black-button">Apply Coupon</button>
+                </div>
+                <!-- Rest of your content -->
+            </div>
+            
+
+        </div>
+        <div class="c-column">
+          <div class="right-box">
+              <p class="totals-text">Card Totals</p>
+              <div class="totals-container">
+                  <div class="totals-left">
+                      <p class="totals-title">SUBTOTAL</p>
+                      <p class="totals-title">SHIPPING</p>
+                      <!-- <p class="totals-desc">Some description</p> -->
+                  </div>
+                  <div class="totals-right">
+                      <p class="totals-price">$65</p>
+                      <p class="totals-desc">Shipping costs will be calculated </p>
+                      <p class="totals-desc">once you have provided address.</p>
+                      <p class="shipping-text">CALCULATING SHIPPING<i class="fa fa-caret-down"></i></p>
+                      <div class="shipping-dropdown">
+                        <div class="input-column">
+                          <input type="text" class="input-field" placeholder="SELECT YOUR COUNTRY">
+                      </div>
+                      <div class="input-column">
+                        <input type="text" class="input-field" placeholder="CITY">
+                    </div>
+                    <div class="input-column">
+                      <input type="text" class="input-field" placeholder="POST CODE/ ZIP">
+                  </div>
+                  
+                    </div>
+                    <button class="white-button">UPDATE TOTALS</button>
+                   
+
+                  </div>
+
+                  
+              </div>
+              <div class="divider"></div>
+              <div class="container total">
+                <p class="text">TOTAL</p>
+                <p class="totals-price">$65</p>
+               
+            </div>
+            <button class="white-button">PROCEED TO CHECKOUT</button>
+          </div>
+      </div>
+      
+      </div>
+  </div>
+  </body>
+</html>
