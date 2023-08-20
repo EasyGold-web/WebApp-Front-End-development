@@ -14,7 +14,7 @@ h1 {
 
 .c-columns {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 2rem;
 }
 
@@ -31,7 +31,7 @@ h1 {
 
 .right-box {
     background-color: black;
-    height: 100px;
+    
 }
 
 /* Style the left box */
@@ -143,7 +143,7 @@ h1 {
 }
 .right-box {
     height: 100%;
-    width: 70%;
+    width: 100%;
     padding: 20px;
     display: flex;
     margin: 3rem;
@@ -313,5 +313,10 @@ h1 {
     }
     .container{
         margin-left: 0% !important;
+    }
+}
+@media (min-width: 912px) {
+    .c-column {
+        width: 100%;
     }
 }
