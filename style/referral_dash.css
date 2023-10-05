@@ -85,7 +85,7 @@
     display: flex;
     flex-direction: column;
     flex-basis: 90%;
-    margin-right: 3rem !important;
+    margin-right: 1rem !important;
   }
   
   .t-white-circle {
@@ -121,15 +121,14 @@
 .column{
     display: flex;
     flex-direction: row;
+    
 }
   
   .next-icon {
     color: white;
     font-size: 12px;
   }
-  .w-8{
-    flex: 0.9;
-  }
+  
   .w-2{
     flex: 0.1;
   }
@@ -201,6 +200,12 @@
     justify-content: center;
     text-decoration: underline;
   }
+
+  .rewards-div{
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 1rem; */
+  }
   
   @media screen and (max-width: 768px) {
     .container-h {
@@ -212,10 +217,13 @@
       .container {
         flex-direction: row; /* Stack columns on smaller screens */
       }
-    
+      .rewards-div{
+        margin-top: 1rem;
+      }
       .left-column, .right-column {
         padding: 10px;
         text-align: center;
+        margin-left: 1.5rem;
       }
 
       .right-text-b {
@@ -225,31 +233,72 @@
     
       .l-black-box {
         margin: 1rem;
-        margin-left: 2rem;
-        padding: 10px;
-        width: 80%;
+        /* margin-left: 1rem; */
+        padding: 2rem;
+        width: 96%;
       }
       .text-box{
         font-size: 12px;
       }
       .green-box, .text-box, .progress-box {
-        margin: 10px 0;
+        margin: 20px 0;
+        
       }
-    
+      .column{
+        
+        justify-content: center;
+    }
+      .green-box{
+        font-size: medium;
+        padding: 1rem;
+        margin-bottom: 0rem;
+        /* padding-right: 1rem; */
+        justify-content: center;
+        text-align: center;
+      }
+      p{
+        margin-bottom: 0 !important;
+      }
+      .text-box{
+        flex-direction: column;
+      }
+      
+
+.bold-text {
+  font-weight:600;
+  font-size: large;
+}
+      .progress-box {
+        height: 0.1rem !important;
+        color: white;
+        display: block;
+        background: white;
+      }
+      .credits{
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+        min-width: 97%;
+      }
       .white-box-row {
         flex-direction: column;
        
             justify-content: space-between;
             margin-bottom: -1rem;
-            margin-right: 1rem;
+            margin-right: -1rem;
           
     }
     
       .white-box {
-        margin: 1.8rem;
+        margin: 0.8rem;
         padding: 10px;
         text-align: center;
+        display: flex;
+        justify-content: center;
       }
+
+     .mt-{
+      margin-top: 0.5rem;
+     }
     
       .arrow {
         font-size: xx-large;
