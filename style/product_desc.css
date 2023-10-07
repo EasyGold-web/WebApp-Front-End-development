@@ -125,11 +125,13 @@ img{
 }
 .img-display{
     overflow: hidden;
+    margin: 1rem;
 }
 .img-showcase{
     display: flex;
     width: 100%;
     transition: all 0.5s ease;
+   
 }
 .img-showcase img{
     min-width: 100%;
@@ -151,6 +153,7 @@ img{
 .product-content{
     padding: 2rem 1rem;
     background-color: #000;
+    margin: 1rem;
 }
 .product-title{
     font-size: 3rem;
@@ -489,6 +492,63 @@ footer {
   }
   
   @media (max-width: 768px) {
+
+
+
+
+
+
+/* Your existing styles */
+
+.similar-products-slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  gap: 10px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.similar-product-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 80%; /* Adjust as needed */
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  translate: 23rem;
+}
+
+/* Add any additional styling for product items */
+
+.slider-controls {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.prev-slide,
+.next-slide {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+
+
+/* Add hover or active styles for the controls */
+
+
+
+
         footer {
           flex-direction: column;
         }
@@ -585,11 +645,12 @@ footer {
       }
   
       .similar-products-section {
-        margin: 1rem;
+        margin: 2rem;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         gap: 1rem;
+        overflow-x: scroll;
       }
   
       .similar-product-item {
@@ -629,5 +690,5 @@ footer {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin: 4rem;
+        margin: 1.5rem;
       }
