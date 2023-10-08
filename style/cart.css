@@ -20,6 +20,7 @@ h1 {
 
 .c-column {
     width: 50%;
+    background-color: black;
 }
 
 .left-box {
@@ -105,6 +106,7 @@ h1 {
     flex-direction: column;
     border-bottom: 1px solid white;
     padding: 10px;
+    padding-left: 0;
 }
 
 .input-field {
@@ -176,7 +178,7 @@ h1 {
 }
 .totals-title {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 1rem;
 }
 
 .totals-price {
@@ -188,6 +190,9 @@ h1 {
 .totals-desc {
     color: gray;
 }
+.totals-right p{
+    margin-bottom: auto;
+}
 
 .shipping-text {
     font-size: 18px;
@@ -195,6 +200,7 @@ h1 {
     display: flex;
     align-items: center;
     cursor: pointer;
+    margin-top: 2rem;
 }
 
 .fa-caret-down {
@@ -235,13 +241,19 @@ h1 {
     background-color: transparent;
 }
 
-@media (max-width: 768px) {
+.subtotal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@media (max-width: 1150px) {
     .c-columns {
         flex-direction: column;
         margin: 1rem;
     }
     .c-column {
         width: 100%;
+        background-color: transparent;
     }
     .text-box {
         text-align: center;
@@ -264,7 +276,6 @@ h1 {
         padding: 2rem;
     }
     .input-column {
-        padding-left: 1rem;
         width: 200%;
     }
     .left-box-c
@@ -291,13 +302,25 @@ h1 {
         margin-bottom: 10px;
     }
 
+    .input-field{
+        font-size: 12px;
+    }
+
+   .country-select{
+    font-size: 13px;
+   }
+
+   .subtotal{
+    justify-content: space-between;
+   }
+
     .totals-container {
         flex-direction: column;
     }
 
     .totals-right div {
         margin-bottom: 1rem;
-        width: 90%;
+        width: 93%;
     }
     .totals-right button{
         width: 100%;
@@ -305,6 +328,7 @@ h1 {
 
     .shipping-text {
         font-size: 16px;
+        
     }
 
     .shipping-dropdown {
@@ -336,7 +360,7 @@ h1 {
     }
 }
 
-@media (min-width: 912px) {
+@media (min-width: 1161px) {
     .c-column {
         width: 100%;
     }
@@ -344,6 +368,18 @@ h1 {
         display: none;
     }
 }
+
+@media (min-width: 535px) {
+ 
+.right-box {
+    width: 128%;
+    padding: 15px;
+    margin: 2rem;
+    margin-left: 2rem;
+    margin-left: -13%;
+}
+}
+
 
 /* Add a media query for mobile view */
 
