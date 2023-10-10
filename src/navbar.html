@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/styleheader.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <style></style>
+  </head>
+    <section id="hero">
+      <div>
+        <div id="bg51B4FA"></div>
+        <div id="bgF8A6F0"></div>
+        <div id="bgF8D997"></div>
+        <div class="mainblackbg" style="background-color: black">
+          <div class="fullscreenblur"></div>
+        </div>
+      </div>
+    </section>
+    <header>
+      <div style="display: flex;">
+        <div class="logoimg">
+          <img src="../assets/Logo.png" alt="" />
+        </div>
+        <div class="logo">EasyGold</div>
+      </div>
+      <div class="hamwrap">
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+         
+          <li>
+            <a href="">Shop</a>
+          </li>
+          <li>
+            <a href="">Contact Us</a>
+          </li>
+          <li>
+            <a href="">Sign In</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="sidebar">
+      <i class="sidebar-icon active fas fa-home"></i>
+      <span class="sidebar-text sidebar-active">Dashboard</span>
+      <i class="sidebar-icon fas fa-chart-line"></i>
+      <span class="sidebar-text">Explore</span>
+      <i class="sidebar-icon fas fa-wallet"></i>
+      <span class="sidebar-text">Wallet</span>
+      <i class="sidebar-icon fas fa-exchange-alt"></i>
+      <span class="sidebar-text">Transaction</span>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navBar = document.querySelector(".sidebar");
+
+        hamburger.addEventListener("click", function () {
+          hamburger.classList.toggle("active");
+          navBar.classList.toggle("show");
+        });
+
+        const sidebarIcons = document.querySelectorAll(".navbar");
+        const container = document.querySelector(".main-content");
+    
+        sidebarIcons.forEach((icon) => {
+            icon.addEventListener("click", () => {
+                container.style.backgroundColor = "transparent";
+                sidebarIcons.forEach((icon) =>
+                    icon.classList.remove("sidebar-active")
+                );
+                icon.classList.add("sidebar-active");
+            });
+        });
+    
+  </script>
+  </body>
+</html>
