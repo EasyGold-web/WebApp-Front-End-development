@@ -51,6 +51,10 @@
         
         
     </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </head>
 <body>
 
@@ -89,20 +93,47 @@
                     </div>
                 </div>
                 <div class="custom-divider"></div>
-                <button class="btn btn-custom">Withdraw as Gold</button>
+                <button class="btn btn-custom" id="withdrawAsGoldButton">Withdraw as Gold</button>
                 <button class="btn btn-custom">Withdraw in Rupees</button>
             </div>
             <div class="modal-footer">
                 <!-- Add buttons or actions here -->
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save Changes</button>
+                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save Changes</button> -->
             </div>
         </div>
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var withdrawAsGoldButton = document.getElementById("withdrawAsGoldButton");
+        withdrawAsGoldButton.addEventListener("click", function () {
+            console.log('Withdraw as Gold clicked');
+            var customModalBody = document.querySelector("#customModal .modal-body");
+
+            // Create an XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+
+            // Define the callback function to handle the response
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    customModalBody.innerHTML = xhr.responseText;
+                    // Show the modal
+                    var customModal = new bootstrap.Modal(document.getElementById("customModal"));
+                    customModal.show();
+                } else {
+                    console.error("Failed to load content.");
+                }
+            };
+
+            // Open and send the request
+            xhr.open("GET", "withdraw_as_gold.html", true);
+            xhr.send();
+        });
+    });
+</script> -->
 </body>
 </html>

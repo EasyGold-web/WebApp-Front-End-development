@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Popup Example</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      /* Customize the modal style */
+      .custom-modal {
+        background-color: #151718;
+        color: #eeeff0;
+        border-radius: 15px;
+      }
+
+      .custom-modal .modal-header {
+        background-color: #212325;
+        color: #eeeff0;
+        border-bottom: none;
+      }
+
+      .custom-modal .modal-title {
+        font-size: 15px;
+        font-family: "Poppins";
+        font-weight: 500;
+      }
+
+      .custom-modal .modal-body {
+        padding: 1rem;
+      }
+
+      .custom-modal .modal-content {
+        border: none;
+      }
+
+      .custom-modal .modal-footer {
+        border-top: none;
+      }
+      .btn-custom {
+        background-color: #d88e90;
+        color: #000; /* Text color */
+        padding: 10px 20px; /* Adjust padding as needed */
+        margin: 10px; /* Adjust margin as needed */
+        border-radius: 20px; /* Rounded corners */
+        width: 96%; /* Full width */
+      }
+      .custom-divider {
+        background-color: #d88e90;
+        height: 1px; /* Adjust the height as needed */
+        margin: 10px 0; /* Adjust margin as needed */
+      }
+      .transparent-input {
+        background: transparent; /* Set the background to transparent */
+        border: 1px solid #fff; /* White border */
+        border-radius: 10px; /* Rounded corners */
+        color: #fff; /* Text color */
+      }
+      
+      .transparent-input::placeholder {
+        color: #fff; /* Placeholder text color */
+      }
+      
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- Button to trigger the modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#customModal"
+    >
+      Open Popup
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="customModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+          <div class="modal-header">
+            <h5 class="modal-title">Withdraw in Rupees</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Content goes here -->
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <p>Live Gold Price: 50.0 INR</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <p>Your Gold Savings: 12.00 gms</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <p>Current value: 120.00 INR</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <!-- Add a text field for inputting the amount in rupees -->
+                  <div class="form-group">
+                    <label for="rupeeAmount">Enter Amount in Rupees:</label>
+                    <input
+                      type="text"
+                      class="form-control transparent-input"
+                      id="rupeeAmount"
+                      placeholder="500"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <!-- Add a text field for inputting the amount in rupees -->
+                  <div class="form-group">
+                    <label for="rupeeAmount">Enter Quantity in Gms:</label>
+                    <input
+                      type="text"
+                      class="form-control transparent-input"
+                      id="rupeeAmount"
+                      placeholder="10.0"
+                    />
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="custom-divider"></div>
+
+            <button class="btn btn-custom">Proceed to Withdraw</button>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
