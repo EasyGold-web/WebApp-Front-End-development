@@ -24,7 +24,7 @@
       .custom-modal .modal-title {
         font-size: 15px;
         font-family: "Poppins";
-        font-weight: 500;
+        font-weight: 700;
       }
 
       .custom-modal .modal-body {
@@ -65,7 +65,11 @@
         width: 100%; /* Full width */
         background: transparent; /* Set the background to transparent */
         border: 1px solid #fff; /* White border */
-        color: #fff; /* Text color */
+        color: #fff;
+        font-weight: bold; /* Text color */
+      }
+      .custom-modal label[for="selectOption"] {
+        font-weight: bold;
       }
     </style>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -84,11 +88,11 @@
     </button>
 
     <!-- The Modal -->
-    <div class="modal fade" id="customModal">
-      <div class="modal-dialog modal-dialog-centered">
+    <div class="modal fade" id="customModal" >
+      <div class="modal-dialog modal-dialog-centered" role='document'>
         <div class="modal-content custom-modal">
-          <div class="modal-header">
-            <h5 class="modal-title">SIP</h5>
+          <div class="modal-header text-center">
+            <h5 class="modal-title w-100 text-center">SIP</h5>
             <button type="button" class="close" data-dismiss="modal">
               <span aria-hidden="true">&times;</span>
             </button>
